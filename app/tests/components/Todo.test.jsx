@@ -8,6 +8,6 @@ var TodoApp = require('TodoApp');
 
 describe('Todo', () => {
    it('should exist', () => {
-     expect(TodoApp).toExpect();
+     expect(TodoApp).toExist();
    });
 });

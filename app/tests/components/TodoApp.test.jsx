@@ -8,6 +8,6 @@ var Todo = require('Todo');
 
 describe('Todo', () => {
    it('should exist', () => {
-     expect(Todo).toExpect();
+     expect(Todo).toExist();
    });
 });
