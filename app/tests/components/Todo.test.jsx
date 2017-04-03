@@ -5,3 +5,9 @@ var expect = require('expect');
 var $ = require('jquery');
 
 var Todo = require('Todo');
+
+describe('Todo', () => {
+   it('should exist', () => {
+     expect(Todo).toExpect();
+   });
+});
