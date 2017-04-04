@@ -14,7 +14,7 @@ describe('AddTodo', () => {
    it('should call onAddTodo prop with valid data', () => {
      var spy = expect.createSpy();
      var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
-     var $el = $(ReactDom.findDOMNode(addTodo));
+     var $el = $(ReactDOM.findDOMNode(addTodo));
 
      addTodo.refs.todoText.value = 'Check mail';
      TestUtils.Simulate.submit($el.find('form')[0]);
