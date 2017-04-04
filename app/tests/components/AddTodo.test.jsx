@@ -17,5 +17,8 @@ describe('AddTodo', () => {
      var $el = $(ReactDom.findDOMNode(addTodo));
 
      addTodo.refs.todoText.value = 'Check mail';
+     TestUtils.Simulate.submit($el.find('form')[0]);
+
+     expect(spy).toHaveBeenCalledWith('Check mail');
    });
 });
