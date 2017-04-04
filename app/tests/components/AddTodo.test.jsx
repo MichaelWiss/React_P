@@ -12,6 +12,7 @@ describe('AddTodo', () => {
    });
 
    it('should call onAddTodo prop with valid data', () => {
-
+     var spy = expect.createSpy();
+     var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
    });
 });
