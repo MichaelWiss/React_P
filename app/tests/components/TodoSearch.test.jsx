@@ -12,8 +12,12 @@ describe('TodoSearch', () => {
 	});
 
 	it('should call onSearch with entered input text', () => {
+		var spy = expect.createSpy();
+		var todoSearch = TestUtils.renderIntoDocument()
 
 	});
 
-	it('should')
+	it('should call onSearch with proper checked value', () => {
+
+	});
 });
