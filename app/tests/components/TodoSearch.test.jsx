@@ -13,7 +13,7 @@ describe('TodoSearch', () => {
 
 	it('should call onSearch with entered input text', () => {
 		var spy = expect.createSpy();
-		var todoSearch = TestUtils.renderIntoDocument()
+		var todoSearch = TestUtils.renderIntoDocument(<TodoSearch onSearch={spy}/>)
 
 	});
 
