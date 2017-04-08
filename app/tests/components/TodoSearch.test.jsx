@@ -16,8 +16,7 @@ describe('TodoSearch', () => {
 		var todoSearch = TestUtils.renderIntoDocument(<TodoSearch onSearch={spy}/>);
 
 	});
-
-	it('should call onSearch with proper checked value', () => {
+    it('should call onSearch with proper checked value', () => {
 
 	});
 });
