@@ -17,6 +17,7 @@ describe('TodoSearch', () => {
 		var todoSearch = TestUtils.renderIntoDocument(<TodoSearch onSearch={spy}/>);
 
 		todoSearch.refs.searchText.value = searchText;
+		TestUtils.Simulate.change(todoSearch.refs.searchText);
 
 	});
     it('should call onSearch with proper checked value', () => {
