@@ -26,7 +26,9 @@ describe('TodoSearch', () => {
     	var spy = expect.createSpy();
 		var todoSearch = TestUtils.renderIntoDocument(<TodoSearch onSearch={spy}/>);
 
-		todoSearch.refs.showCompleted
+		todoSearch.refs.showCompleted.checked = true;
+		TestUtils.Simulate.change(todoSearch.refs.showCompleted);
 
+        expect(spy).toHaveBeenCalledWith(true, '');
 	});
 });
