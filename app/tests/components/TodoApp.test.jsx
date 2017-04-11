@@ -4,14 +4,14 @@ var TestUtils = require('react-addons-test-utils');
 var expect = require('expect');
 var $ = require('jquery');
 
-var Todo = require('Todo');
+var TodoApp = require('TodoApp');
 
-describe('Todo', () => {
+describe('TodoApp', () => {
    it('should exist', () => {
-     expect(Todo).toExist();
+     expect(TodoApp).toExist();
    });
 
-   it('should add todo to the todos state on handleAddTodo' () => {
+   it('should add todo to the todos state on handleAddTodo', () => {
       var todoText = 'test text';
       var todoApp = TestUtils.renderIntoDocument(<TodoApp/>);
 
