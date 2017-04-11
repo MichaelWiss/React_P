@@ -16,6 +16,8 @@ describe('Todo', () => {
       var todoApp = TestUtils.renderIntoDocument(<TodoApp/>);
 
       todoApp.setState({todos: []});
-      todoApp.handleAddTodo
+      todoApp.handleAddTodo(todoText);
+
+      expect(todoApp.state.todos[0].text).toBe(todoText);
    });
 });
