@@ -10,4 +10,12 @@ describe('Todo', () => {
    it('should exist', () => {
      expect(TodoApp).toExist();
    });
+
+   it('should call onToggle prop with id on click', () => {
+     var todoDate = {
+     	id: 199,
+     	text: 'Write todo.test.jsx test',
+     	completed: true
+     };
+   });
 });
