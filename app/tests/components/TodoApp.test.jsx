@@ -20,4 +20,8 @@ describe('TodoApp', () => {
 
       expect(todoApp.state.todos[0].text).toBe(todoText);
    });
+
+   it('should toggle completed value when handleToggle called', () => {
+
+   });
 });
