@@ -12,10 +12,16 @@ describe('Todo', () => {
    });
 
    it('should call onToggle prop with id on click', () => {
-     var todoDate = {
+     var todoData = {
      	id: 199,
      	text: 'Write todo.test.jsx test',
      	completed: true
      };
+     var spy = expect.createSpy();
+     var todo = TestUtils.renderIntoDocument(<Todo {...todoData} onToggle={spy}/>);
+     var $el = $(ReactDOM.findDOMNode(todo));
+
+     
+
    });
 });
