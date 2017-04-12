@@ -49,7 +49,8 @@ var TodoApp = React.createClass({
          if (todo.id === id) {
             todo.completed = !todo.completed;
          }
-         return todos;
+
+         return todo;
       });
       alert(id);
    },
