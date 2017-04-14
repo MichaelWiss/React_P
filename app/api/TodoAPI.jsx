@@ -17,10 +17,7 @@ module.exports = {
          
      }
 
-     if ($.isArray(todos)) {
-     	return todos;
-     } else {
-     	return [];
-     }
+     return $.isArray(todos) ? todos : [];
+
 	}
 };
