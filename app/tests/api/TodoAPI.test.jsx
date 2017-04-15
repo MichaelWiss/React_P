@@ -38,5 +38,17 @@ describe('TodoAPI', () => {
           var actualTodos = TodoAPI.getTodos();
           expect(actualTodos).toEqual([]);
 		});
+
+		it('should return todo if valid array in localstorage', () => {
+          var todos = [{
+          	id: 23,
+          	test: 'test all files',
+          	completed: false
+          }];
+
+          localStorage.setItem('todos', JSON.stringify(todos));
+          var actualTodos = TodoAPI.getTodos();
+          expect(actualTodos).toEqual(todos);
+		});
 	});
 });
