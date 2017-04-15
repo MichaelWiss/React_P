@@ -19,6 +19,13 @@ describe('TodoAPI', () => {
 
         expect(actualTodos).toEqual(todos);
 	});
+
+	it('should not set invalid todos array,' () => {
+		var badTodos = {a: 'b'};
+		TodoAPI.setTodos(badTodos);
+
+		expect(localStorage.getItem('todos')).toBe(null);
+	});
 });
 
 	describe('getTodos', () => {
