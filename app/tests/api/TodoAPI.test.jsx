@@ -75,6 +75,7 @@ describe('TodoAPI', () => {
 
      it('should sort by completed status', () => {
         var filteredTodos = TodoAPI.filterTodos(todos, true, '');
+        expect(filteredTodos[0].completed).toBe(false);
      });
    });
 });
