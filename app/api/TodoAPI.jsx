@@ -23,6 +23,15 @@ module.exports = {
 	filterTodos: function (todos, showCompleted, searchText) {
         var filteredTodos = todos;
 
+        //filtered by showCompleted
+        filteredTodos = filteredTodos.filter((todo) => {
+
+        });
+
+        //filter by showText
+
+        //sort todos with non-completed first
+
         return filteredTodos;
 	}
 };
