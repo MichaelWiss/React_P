@@ -28,7 +28,8 @@ var TodoApp = React.createClass({
          {
            id: uuid(),
            text: text,
-           completed: false
+           completed: false,
+           createdAt: moment().unix()
          }
        ]
     });
