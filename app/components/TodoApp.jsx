@@ -14,7 +14,7 @@ var TodoApp = React.createClass({
        return {
         showCompleted: false,
         searchText: '',
-          todos: TodoAPI.getTodos()
+        todos: TodoAPI.getTodos()
        };
 	},
   componentDidUpdate: function () {
