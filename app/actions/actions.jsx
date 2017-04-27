@@ -24,3 +24,12 @@ export var addTodo = (text) => {
 };
 
 //toggleTodo(id) TOGGLE_TODO
+
+export var toggleTodo = (toggleTodo) => {
+	return {
+		type: 'TOGGLE_TODO',
+		todo
+	};
+};
+
+
