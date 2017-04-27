@@ -4,3 +4,7 @@ export var setSearchText = (searchText) => {
 		searchText
 	};
 };
+
+export var addTodo (text) => {
+
+};
