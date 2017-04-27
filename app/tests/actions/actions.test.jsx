@@ -17,6 +17,8 @@ describe('Actions', () =>{
      	type: 'TOGGLE_SHOW_COMPLETED'
      };
      var res = actions.toggleShowCompleted();
+
+     expect(res).toEqual(action);
    });
 
    it('should generate add todo action', () => {
