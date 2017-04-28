@@ -15,11 +15,14 @@ describe('Reducers', () => {
       });
    });
 
-   describe('showCompletedreducer', () => {
+   describe('showCompletedReducer', () => {
      it('should toggle show completed', () => {
       var action = {
           type: 'TOGGLE_SHOW_COMPLETED'
       };
+      var res = reducers.showCompletedReducer(false, action);
+
+      expect(res).toEqual(true);
      });
    });
 });
