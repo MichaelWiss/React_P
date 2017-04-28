@@ -26,4 +26,11 @@ describe('Reducers', () => {
       expect(res).toEqual(true);
      });
    });
+
+   describe('todosReducer', () => {
+     it('should add new todo', () {
+     	type: 'ADD_TODO',
+     	text: 'Walk the dog'
+     });
+   });
 });
