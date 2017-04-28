@@ -9,7 +9,7 @@ describe('Reducers', () => {
       		type: 'SET_SEARCH_TEXT',
       		searchText: 'dog'
       	};
-      	var res = reducer.searchTextReducer('', action);
+      	var res = reducers.searchTextReducer('', action);
 
       	expect(res).toEqual(action.searchText);
       });
