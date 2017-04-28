@@ -31,6 +31,8 @@ export var todosReducer = (state = [], action) => {
            createdAt: moment().unix(),
            completedAt: undefined
          }
-   	 ]
+   	 ];
+   	 default: 
+   	   return state;
    }
 }; 
