@@ -30,4 +30,9 @@ describe('Actions', () =>{
 
      expect(res).toEqual(action);
    });
+   it('should generate toggle todo action', () => {
+
+   });
+   
+
 });
