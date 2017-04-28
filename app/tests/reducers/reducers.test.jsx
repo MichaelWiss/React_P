@@ -14,4 +14,12 @@ describe('Reducers', () => {
       	expect(res).toEqual(action.searchText);
       });
    });
+
+   describe('showCompletedreducer', () => {
+     it('should toggle show completed', () => {
+      var action = {
+          type: 'TOGGLE_SHOW_COMPLETED'
+      };
+     });
+   });
 });
