@@ -25,10 +25,10 @@ export var addTodo = (text) => {
 
 //toggleTodo(id) TOGGLE_TODO
 
-export var toggleTodo = (toggleTodo) => {
+export var toggleTodo = (id) => {
 	return {
 		type: 'TOGGLE_TODO',
-		todo
+		id
 	};
 };
 
