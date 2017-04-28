@@ -32,5 +32,9 @@ describe('Reducers', () => {
      	type: 'ADD_TODO',
      	text: 'Walk the dog'
      });
+     var res = reducers.todosReducer(df([]), df(action));
+
+     expect(res.length).toEqual(1);
+     expect(res[0].text).toEqual(action.text);
    });
 });
