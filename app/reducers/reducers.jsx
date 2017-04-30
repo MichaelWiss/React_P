@@ -34,8 +34,11 @@ export var todosReducer = (state = [], action) => {
    	 ];
    	 // add case for TOGGLE_TODO completed = opposite values & update CompletedAt
    	 case 'TOGGLE_TODO':
-   	    return [
-   	    ]
+   	    return state.map((todo) => {
+           if (todo.id === action.id) {
+           	var nextCompleted
+           }
+   	    });
    	 default: 
    	   return state;
    }
