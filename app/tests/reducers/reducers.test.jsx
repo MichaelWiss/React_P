@@ -41,7 +41,14 @@ describe('Reducers', () => {
    it('should toggle todo', () => {
      var todos =[{
        id: '123',
-       
+       text: 'Something',
+       completed: true,
+       createdAt: 123,
+       completedAt: 125
      }];
+     var action = {
+     	type: 'TOGGLE_TODO',
+     	
+     }
    });
 });
