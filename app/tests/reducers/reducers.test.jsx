@@ -28,10 +28,11 @@ describe('Reducers', () => {
    });
 
    describe('todosReducer', () => {
-     it('should add new todo', () {
+     it('should add new todo', () => {
+     	var action ={
      	type: 'ADD_TODO',
      	text: 'Walk the dog'
-     });
+     };
      var res = reducers.todosReducer(df([]), df(action));
 
      expect(res.length).toEqual(1);
@@ -54,5 +55,6 @@ describe('Reducers', () => {
 
      expect(res[0].completed).toEqual(false);
      expect(res[0].completedAt).toEqual(undefined);
+   });
    });
 });
