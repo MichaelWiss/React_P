@@ -4,6 +4,9 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 var TodoApp = require('TodoApp');
 
+var actions = require('actions');
+
+
 //load foundation
 $(document).foundation();
 
