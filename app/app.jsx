@@ -23,6 +23,8 @@ $(document).foundation();
 require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
-	<TodoApp/>,
+	<Provider store={store>
+      <TodoApp/>
+	</Provider>,
   document.getElementById('app')
 );
