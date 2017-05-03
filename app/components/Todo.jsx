@@ -36,4 +36,4 @@ export var Todo = React.createClass({
     }
 });
 
-export default()(Todo);
+export default connect()(Todo);
