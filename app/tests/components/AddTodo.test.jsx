@@ -27,10 +27,10 @@ describe('AddTodo', () => {
      expect(spy).toHaveBeenCalledWith(action);
    });
 
-    it('should not call onAddTodo prop when invalid input', () => {
+    it('should not dispatch onAddTodo when invalid todo text', () => {
    	 var todoText = '';
      var spy = expect.createSpy();
-     var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
+     var addTodo = TestUtils.renderIntoDocument(<AddTodo dispatch={spy}/>);
      var $el = $(ReactDOM.findDOMNode(addTodo));
 
      addTodo.refs.todoText.value = todoText;
