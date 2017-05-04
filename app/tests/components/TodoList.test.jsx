@@ -9,14 +9,14 @@ import {configure} from 'configureStore';
 import ConnectedTodoList, {TodoList} from 'TodoList';
 import ConnectedTodo, {Todo} from 'Todo'
 
-var Todo = require('Todo');
+
 
 describe('TodoList', () => {
    it('should exist', () => {
      expect(TodoList).toExist();
    });
 
-   it('should render one Tod component for each todo item', () => {
+   it('should render one Todo component for each todo item', () => {
    	var todos = [{
    		id: 1,
    		text: 'Do something',
@@ -38,7 +38,7 @@ describe('TodoList', () => {
              <ConnectedTodoList/>
          </Provider>
       );
-      var todoList = TestUtils.scryRenderedComponentWithType(provider, ConnectedTodoList)[0];
+      var todoList = TestUtils.scryRenderedComponentsWithType(provider, ConnectedTodoList)[0];
    	var todosComponents = TestUtils.scryRenderedComponentsWithType(todoList, ConnectedTodo);
 
    	expect(todosComponents.length).toBe(todos.length);
