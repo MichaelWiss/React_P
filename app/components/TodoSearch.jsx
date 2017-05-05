@@ -2,7 +2,7 @@ var React = require('react');
 var {connect} = require('react-redux');
 var actions = require('actions');
 
-var TodoSearch = React.createClass({
+export var TodoSearch = React.createClass({
 	handleSearch: function () {
       var showCompleted = this.refs.showCompleted.checked;
       var searchText = this.refs.searchText.value;
@@ -27,4 +27,11 @@ var TodoSearch = React.createClass({
 
 });
 
-module.exports = TodoSearch;
+export default connect(
+  (state) => {
+    return {
+      showCompleted: state.showCompleted,
+      searchText: state.searchText
+    }
+  }
+  )(TodoSearch);
