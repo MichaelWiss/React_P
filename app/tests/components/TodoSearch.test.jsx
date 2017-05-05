@@ -4,14 +4,15 @@ var TestUtils = require('react-addons-test-utils');
 var expect = require('expect');
 var $ = require('jquery');
 
-var TodoSearch = require('TodoSearch');
+// var TodoSearch = require('TodoSearch');
+import {TodoSearch} from 'TodoSearch';
 
 describe('TodoSearch', () => {
 	it('should exist', () => {
 		expect(TodoSearch).toExist();
 	});
 
-	it('should call onSearch with entered input text', () => {
+	it('it should dispatch SET_SEARCH_TEXT on input change', () => {
 	    var searchText = 'Dog';
 		var spy = expect.createSpy();
 		var todoSearch = TestUtils.renderIntoDocument(<TodoSearch onSearch={spy}/>);
