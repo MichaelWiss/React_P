@@ -58,7 +58,17 @@ describe('Reducers', () => {
    });
 
    it('should add existing todos', () => {
-
-   });
+      var todos = [{
+        id: '111',
+        test: 'anything',
+        completed: false,
+        completedAt: undefined,
+        createdAt: 33000
+      }];
+      var action = {
+        type: 'ADD_TODOS',
+        todos
+      };
+     });
    });
 });
