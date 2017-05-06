@@ -26,7 +26,7 @@ export var addTodos = (todos) => {
     return {
     	type: 'ADD_TODOS',
     	todos
-    }
+    };
 };
 
 //toggleTodo(id) TOGGLE_TODO
