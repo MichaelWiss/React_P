@@ -12,7 +12,7 @@ import './../playground/firebase/index';
 
 
 store.subscribe(() => {
-  var store = store.getState();
+  var state = store.getState();
   console.log('New state', state);
   TodoAPI.setTodos(state.todos);
 });
