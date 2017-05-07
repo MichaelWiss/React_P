@@ -9,3 +9,7 @@ var config = {
     messagingSenderId: "409724155762"
   };
   firebase.initializeApp(config);
+
+  firebase.database().ref().set({
+  	appName: 'Todo App'
+  });
